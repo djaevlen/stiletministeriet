@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stiletministeriet</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Open Sans"', 'sans-serif'],
+                        },
+                        colors: {
+                            stiletBeige: {
+                                DEFAULT: '#F4F1EA',
+                                light: '#FDFCF9',
+                                dark: '#E0D8C3',
+                            },
+                            stiletGreen: {
+                                DEFAULT: '#2C4C3B',
+                                light: '#4A755D',
+                                dark: '#1A2E24',
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.0.0/dist/cdn.min.js" defer></script>
+    </head>
+
+    <body class="bg-stiletBeige font-sans text-stiletGreen antialiased selection:bg-stiletGreen-light selection:text-stiletBeige-light">
+        <div class="max-w-md mx-auto bg-stiletBeige-light shadow-md sm:shadow-lg">
+            <header class="flex justify-center pt-0 pb-0 px-6 border-b border-stiletBeige-dark/50">
+                <img src="./logo.svg" alt="Stiletministeriet Logo" class="w-24 h-36 object-contain" />
+            </header>
+
+            <main class="px-8 py-12">
+                <h2 class="text-2xl font-bold mb-10 text-center text-stiletGreen-dark uppercase tracking-wide">Du er inviteret!</h2>
+                <div class="flex-col flex gap-4 mb-8">
+                    <p>Gør dig klar til en dag fyldt med hygge, grin og festlige overraskelser 🎉</p>
+                    <p>📍 Mødetid: Kl. 15.15</p>
+                    <p>📍 Mødested: Nørreport Station - ved indgangen til Købmagergade</p>
+                    <p>🚲 Cykel er meget velkommen!</p>
+                    <p>👗 Dresscode: Casual festtøj - men snup et par flade sko med (du får brug for dem 😉)</p>
+                    <p>🍽 Middag: Kl. 20 🥳 Resten af aftenen byder på fest, leg og god stemning!</p>
+                    <p>Vigtigt: Lad kalenderen være tom søndag morgen 😏</p>
+                    <p>Glæder mig helt vildt til at fejre sammen med dig! 💫</p>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-10 text-center text-stiletGreen-dark uppercase tracking-wide">Dagens Agenda</h2>
+
+                <div class="relative border-l-2 border-stiletGreen-light/30 ml-2">
+                    <div class="mb-10 ml-8 relative">
+                        <span class="absolute flex items-center justify-center w-4 h-4 rounded-full bg-stiletGreen ring-4 ring-stiletBeige-light -left-[41px] top-1"></span>
+
+                        <div class="mb-1 text-sm font-bold text-stiletGreen-light tracking-wider">15:15</div>
+                        <h3 class="text-xl font-bold text-stiletGreen-dark mb-1">Ankomst & Velkomst</h3>
+                        <div class="text-sm font-semibold italic text-stiletGreen mb-3 flex items-center gap-1.5 opacity-80">
+                            <img src="./location.svg" alt="Location Icon" class="w-4 h-4" />
+                            <a href="https://maps.app.goo.gl/qbAJrZ7TyVoX3cDx8" target="_blank" rel="noopener noreferrer">Nørreport Station</a>
+                        </div>
+                        <p class="text-base text-stiletGreen/90 leading-relaxed">
+                            Vi mødes ved Nørreport - præcis hvor Købmagergade begynder - og skyder festlighederne i gang med øl, grin og godt selskab 🍻
+                        </p>
+                    </div>
+
+                    <div class="mb-10 ml-8 relative">
+                        <span class="absolute flex items-center justify-center w-4 h-4 rounded-full bg-stiletGreen ring-4 ring-stiletBeige-light -left-[41px] top-1"></span>
+
+                        <div class="mb-1 text-sm font-bold text-stiletGreen-light tracking-wider">16:30</div>
+                        <h3 class="text-xl font-bold text-stiletGreen-dark mb-1">Quiz-time</h3>
+                        <div class="text-sm font-semibold italic text-stiletGreen mb-3 flex items-center gap-1.5 opacity-80">
+                            <img src="./location.svg" alt="Location Icon" class="w-4 h-4" />
+                            <a href="https://maps.app.goo.gl/Ab74TND76vGh5YQS7" target="_blank" rel="noopener noreferrer">Quiz Boxing</a>
+                        </div>
+                        <p class="text-base text-stiletGreen/90 leading-relaxed">Quiz-time i Gothersgade! Tid til skarpe hjerner, dumme svar og masser af point (måske) 🧠✨</p>
+                    </div>
+
+                    <div class="mb-10 ml-8 relative">
+                        <span class="absolute flex items-center justify-center w-4 h-4 rounded-full bg-stiletGreen ring-4 ring-stiletBeige-light -left-[41px] top-1"></span>
+
+                        <div class="mb-1 text-sm font-bold text-stiletGreen-light tracking-wider">18:15</div>
+                        <h3 class="text-xl font-bold text-stiletGreen-dark mb-1">Vino Stop</h3>
+                        <div class="text-sm font-semibold italic text-stiletGreen mb-3 flex items-center gap-1.5 opacity-80">
+                            <img src="./location.svg" alt="Location Icon" class="w-4 h-4" />
+                            <a href="https://maps.app.goo.gl/qiW5dPZofKgnwXGR9" target="_blank" rel="noopener noreferrer">Bar Somm'</a>
+                        </div>
+                        <p class="text-base text-stiletGreen/90 leading-relaxed">Vi skåler videre med vin på Bar Somm - fordi elegance også kan være sjov 🍷</p>
+                    </div>
+
+                    <div class="mb-10 ml-8 relative">
+                        <span class="absolute flex items-center justify-center w-4 h-4 rounded-full bg-stiletGreen ring-4 ring-stiletBeige-light -left-[41px] top-1"></span>
+
+                        <div class="mb-1 text-sm font-bold text-stiletGreen-light tracking-wider">20:15</div>
+                        <h3 class="text-xl font-bold text-stiletGreen-dark mb-1">Middag</h3>
+                        <div class="text-sm font-semibold italic text-stiletGreen mb-3 flex items-center gap-1.5 opacity-80">
+                            <img src="./location.svg" alt="Location Icon" class="w-4 h-4" />
+                            <a href="https://maps.app.goo.gl/PkLYYeeBe1fBDEQQ6" target="_blank" rel="noopener noreferrer">Food Club Nørrebro</a>
+                        </div>
+                        <p class="text-base text-stiletGreen/90 leading-relaxed">Middag på Food Club - nu bliver det alvorligt lækkert 😋</p>
+                    </div>
+
+                    <div class="mb-10 ml-8 relative">
+                        <span class="absolute flex items-center justify-center w-4 h-4 rounded-full bg-stiletGreen ring-4 ring-stiletBeige-light -left-[41px] top-1"></span>
+
+                        <div class="mb-1 text-sm font-bold text-stiletGreen-light tracking-wider">22:45</div>
+                        <h3 class="text-xl font-bold text-stiletGreen-dark mb-1">Natklub</h3>
+                        <div class="text-sm font-semibold italic text-stiletGreen mb-3 flex items-center gap-1.5 opacity-80">
+                            <img src="./location.svg" alt="Location Icon" class="w-4 h-4" />
+                            <a href="https://maps.app.goo.gl/ajwmyrFprYNV3cZSA" target="_blank" rel="noopener noreferrer">Bip Bip Bar</a>
+                        </div>
+                        <p class="text-base text-stiletGreen/90 leading-relaxed">Vi runder aftenen af på Bip Bip Bar, hvor natten først lige er begyndt 🪩</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
